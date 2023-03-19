@@ -59,7 +59,7 @@ while True:
                 continue
         elif 'D' in pick[1]:
                         # As the user to input a message then convert the message to uppercase letters.
-            message = input("Type !Q to quit.\nFor spaces, please use -\nPlease type a message to decode: ").upper()
+            message = input("For spaces, please use -\nPlease type a message to decode: ").upper()
     
             # If the inputted message contains characters that are within the dictionary, follow through.
             if all(char in alphabet for char in message):
