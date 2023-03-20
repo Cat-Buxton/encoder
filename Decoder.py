@@ -43,7 +43,7 @@ while True:
             # To convert the list to a string by joining the list together.
             result = ''.join(message_e)
             # Print the final result.
-            print("Decoded message: " + result)
+            print("DECODED MESSAGE: " + result)
         # If the inputted offset is not a digit, restart.
         else:
             print("Please input an integer, thank you.")
