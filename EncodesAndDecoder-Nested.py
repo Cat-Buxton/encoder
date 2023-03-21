@@ -26,7 +26,7 @@ while True:
                     message_e = [alphabet_rev[num] for num in nums2]
                     print("(corresponding dictionary values + offset) to letters:", message_e)
                     result = ''.join(message_e)
-                    print("Encoded message: " + result)
+                    print("ENCODED MESSAGE: " + result)
                 else:
                     print("Please input an integer, thank you.")
                     continue
@@ -101,7 +101,7 @@ while True:
                     message_e = [alphabet_rev[num] for num in nums2]
                     print("(corresponding dictionary values + offset) to letters:", message_e)
                     result = ''.join(message_e)
-                    print("Decoded message: " + result)
+                    print("DECODED MESSAGE: " + result)
                 else:
                     print("Please input an integer, thank you.")
                     continue
