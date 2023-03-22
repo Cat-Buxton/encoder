@@ -6,7 +6,7 @@ while True:
                 "O": 14, "P": 15, "Q": 16, "R": 17, "S": 18, "T": 19, "U": 20, "V": 21, "W": 22, "X": 23, "Y": 24, "Z": 25, "-": 26}
 
     pick = input("!Q to quit.\n!E to encode in Ceasar.\n!D to decode in Ceasar.\n!SE to encode in seeded Ceasar.\n!SD to decode in seeded Ceasar.\n" ).upper()
-    if pick[0] == '!':
+    if pick[0] == '!' and len(pick) >= 2:
         if 'Q' in pick[1]:
             exit()
         elif 'E' in pick[1]:
@@ -33,7 +33,7 @@ while True:
             else:
                 print("Please do not include numbers, special characters, or spaces. Thank you.")
                 continue
-        elif 'S' in pick[1]:
+        elif 'S' in pick[1] and len(pick) >= 3:
             if 'E' in pick[2]:
                 message = input("For spaces, please use -\nPlease type a message to encode: ").upper()
                 if all(char in alphabet for char in message):
